@@ -1,0 +1,38 @@
+
+.seal-animation {
+  width: 128px;
+  height: 128px;
+
+  background-image: url("assets/pink-seal.png");
+  background-size: 768px 128px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  image-rendering: pixelated;
+
+  animation: seal-idle 1s steps(6, end) infinite;
+}
+
+@keyframes seal-idle {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -768px 0;
+  }
+}
+
+.white-seal {
+  background-image: url("assets/white-seal.png");
+}
+
+.seal-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
